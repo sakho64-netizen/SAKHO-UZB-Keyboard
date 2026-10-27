@@ -1,8 +1,10 @@
 # SAKHO UZB Keyboard
 
-**Version 2.2 | Windows 10/11 x64 | Free**
+**Version 2.2 · Windows 10/11 x64 · Free**
 
-Uzbek Latin keyboard with 300 ms LongPress support.
+**SAKHO UZB Keyboard** — a custom Uzbek Latin keyboard layout for Windows with convenient **300 ms LongPress** support.
+
+Type special Uzbek Latin characters by holding familiar keys, without changing the standard QWERTY typing experience.
 
 ---
 
@@ -10,9 +12,9 @@ Uzbek Latin keyboard with 300 ms LongPress support.
 
 ### Dastur haqida
 
-**SAKHO UZB Keyboard** — Windows operatsion tizimi uchun ishlab chiqilgan o‘zbek lotin yozuvi klaviaturasi.
+**SAKHO UZB Keyboard** — Windows operatsion tizimi uchun ishlab chiqilgan, o‘zbek lotin yozuvida matn kiritishni qulaylashtiruvchi klaviatura dasturi.
 
-Dastur standart QWERTY klaviaturasiga asoslangan bo‘lib, maxsus harflarni tugmalarni bosib turish orqali kiritish imkonini beradi.
+Klaviatura standart **QWERTY** joylashuviga asoslangan. Maxsus harflarni kiritish uchun tegishli tugmani taxminan **300 millisekund** bosib turish kifoya.
 
 ### Asosiy imkoniyatlar
 
@@ -23,22 +25,28 @@ Dastur standart QWERTY klaviaturasiga asoslangan bo‘lib, maxsus harflarni tugm
 | S | s | ş |
 | C | c | ç |
 
-Shift bilan katta harflar: **Ö, Ğ, Ş, Ç**.
+**Shift** tugmasi bilan bosh harflar kiritiladi: **Ö, Ğ, Ş, Ç**.
 
-- Boshqa klaviatura tillariga ta’sir qilmaydi.
-- Backspace orqali harflarni almashtirmaydi.
-- Windows ishga tushganda LongPress yordamchi dasturi avtomatik ishga tushadi.
-- Bepul tarqatiladi.
+**Afzalliklari:**
 
-### O‘rnatish
+- Odatdagi QWERTY tugmalar joylashuvi saqlanadi.
+- Maxsus harflar 300 ms bosib turish orqali kiritiladi.
+- Boshqa klaviatura tillarining ishlashiga ta’sir qilmaydi.
+- Harflarni almashtirish uchun Backspace usulidan foydalanmaydi.
+- LongPress yordamchi dasturi Windows bilan birga avtomatik ishga tushadi.
+- Shaxsiy, ta’limiy va kundalik foydalanish uchun bepul.
 
-1. GitHub sahifasidagi **Releases** bo‘limiga o‘ting.
+### O‘rnatish tartibi
+
+1. GitHub sahifasidagi **Releases** bo‘limini oching.
 2. `SAKHO_UZB_Keyboard_2_2_Setup.exe` faylini yuklab oling.
-3. O‘rnatuvchini administrator ruxsati bilan ishga tushiring.
-4. O‘rnatish yakunlangach, Windows klaviatura tillari orasidan UZB ni tanlang.
-5. Notepad dasturida maxsus harflarni sinab ko‘ring.
+3. O‘rnatuvchini administrator huquqi bilan ishga tushiring.
+4. O‘rnatish jarayonidagi ko‘rsatmalarga amal qiling.
+5. Tizim qayta ishga tushirishni so‘rasa, kompyuterni qayta yuklang.
+6. Windows klaviatura tillari orasidan **UZB** joylashuvini tanlang.
+7. Notepad dasturida maxsus harflarning kiritilishini tekshiring.
 
-**Moslik:** Windows 11 x64 da sinovdan o‘tgan. Windows 10 x64 mosligi qo‘shimcha tekshiriladi.
+**Moslik:** Windows 11 x64 tizimida sinovdan muvaffaqiyatli o‘tgan. Windows 10 x64 bilan mosligi qo‘shimcha sinovdan o‘tkazilishi kerak.
 
 ---
 
@@ -46,61 +54,98 @@ Shift bilan katta harflar: **Ö, Ğ, Ş, Ç**.
 
 ### О программе
 
-**SAKHO UZB Keyboard** — клавиатура для ввода узбекского текста на латинице в Windows.
+**SAKHO UZB Keyboard** — программа для удобного ввода узбекского текста на латинице в операционной системе Windows.
 
-Программа использует стандартную раскладку QWERTY и поддерживает ввод специальных символов при удержании клавиш в течение 300 мс.
+Раскладка основана на стандартной клавиатуре **QWERTY** и позволяет вводить специальные символы удержанием соответствующих клавиш примерно **300 миллисекунд**.
 
-| Клавиша | Короткое нажатие | Удержание |
+### Основные возможности
+
+| Клавиша | Короткое нажатие | Удержание 300 мс |
 |---|---|---|
 | O | o | ö |
 | G | g | ğ |
 | S | s | ş |
 | C | c | ç |
 
-С клавишей Shift вводятся заглавные буквы **Ö, Ğ, Ş, Ç**.
+Для ввода заглавных букв используйте **Shift**: **Ö, Ğ, Ş, Ç**.
+
+**Преимущества:**
+
+- Сохраняется привычная раскладка QWERTY.
+- Специальные символы вводятся удержанием клавиш.
+- Не влияет на работу других языковых раскладок.
+- Не использует Backspace для замены символов.
+- Вспомогательная программа LongPress запускается автоматически вместе с Windows.
+- Распространяется бесплатно.
 
 ### Установка
 
-1. Откройте раздел **Releases**.
-2. Скачайте установщик версии 2.2.
+1. Откройте раздел **Releases** на GitHub.
+2. Скачайте файл `SAKHO_UZB_Keyboard_2_2_Setup.exe`.
 3. Запустите установщик с правами администратора.
-4. Выберите раскладку UZB в Windows.
-5. Проверьте ввод символов в Блокноте.
+4. Следуйте инструкциям программы установки.
+5. При необходимости перезагрузите компьютер.
+6. Выберите раскладку **UZB** в настройках клавиатуры Windows.
+7. Проверьте ввод специальных символов в Блокноте.
 
-**Совместимость:** протестировано в Windows 11 x64. Windows 10 x64 требует дополнительной проверки.
-
-Программа распространяется бесплатно.
+**Совместимость:** успешно протестировано в Windows 11 x64. Совместимость с Windows 10 x64 требует дополнительной проверки.
 
 ---
 
 ## 🇬🇧 English
 
-### About
+### About the software
 
-**SAKHO UZB Keyboard** is a custom Uzbek Latin keyboard layout for Windows, featuring a 300 ms long-press mechanism.
+**SAKHO UZB Keyboard** is a custom Uzbek Latin keyboard layout designed to make typing special characters easier on Windows.
 
-| Key | Short press | Long press |
+It preserves the familiar **QWERTY** layout and provides a **300 ms LongPress** feature for entering additional characters.
+
+### Key features
+
+| Key | Short press | 300 ms long press |
 |---|---|---|
 | O | o | ö |
 | G | g | ğ |
 | S | s | ş |
 | C | c | ç |
 
-Hold Shift to type **Ö, Ğ, Ş, Ç**.
+Use **Shift** to type uppercase characters: **Ö, Ğ, Ş, Ç**.
+
+**Features:**
+
+- Familiar QWERTY keyboard layout.
+- Convenient long-press character input.
+- Does not interfere with other keyboard languages.
+- No Backspace-based character replacement.
+- Automatic startup of the LongPress helper with Windows.
+- Free to use.
 
 ### Installation
 
-1. Open the **Releases** section.
-2. Download the version 2.2 installer.
+1. Open the **Releases** section on GitHub.
+2. Download `SAKHO_UZB_Keyboard_2_2_Setup.exe`.
 3. Run the installer with administrator privileges.
-4. Select the UZB keyboard layout in Windows.
-5. Test the special characters in Notepad.
+4. Follow the installation instructions.
+5. Restart Windows if prompted.
+6. Select the **UZB** keyboard layout.
+7. Test special characters in Notepad.
 
-**Compatibility:** Tested on Windows 11 x64. Windows 10 x64 compatibility is not yet verified.
-
-The software is distributed free of charge.
+**Compatibility:** successfully tested on Windows 11 x64. Windows 10 x64 compatibility has not yet been independently verified.
 
 ---
+
+## Technical information
+
+| Component | Technology |
+|---|---|
+| Keyboard layout | Microsoft Keyboard Layout Creator 1.4 |
+| LongPress functionality | AutoHotkey v2.0.30 |
+| Installation package | Inno Setup 7 |
+| LongPress activation | Approximately 300 ms |
+| Supported architecture | Windows x64 |
+| Current version | 2.2 |
+
+The LongPress functionality is intended for the SAKHO UZB keyboard layout and does not modify the behavior of other selected keyboard languages.
 
 ## Author / Muallif / Автор
 
@@ -108,16 +153,53 @@ The software is distributed free of charge.
 
 Uzbekistan · 2026
 
-## License and third-party components
-
 Copyright © 2026 Xudayberdiyev Saxobiddin Abdurayimovich.
 
-The original project components are authored by the developer. The application also uses third-party tools and components, including AutoHotkey, Microsoft Keyboard Layout Creator and Inno Setup, which are subject to their respective license terms.
+## License and third-party components
 
-Free distribution does not automatically grant permission to modify or redistribute the source code. Detailed licensing and third-party notices will be published separately.
+**SAKHO UZB Keyboard 2.2 is distributed free of charge.**
+
+The project contains original components developed by the author and incorporates or uses third-party software subject to its respective licensing terms.
+
+### Original project components
+
+The original keyboard layout, documentation, and independently developed project materials are subject to the terms specified in the project's `LICENSE.txt`, insofar as those terms do not conflict with applicable third-party licenses.
+
+### AutoHotkey
+
+The LongPress helper is built using **AutoHotkey v2.0.30**.
+
+AutoHotkey is distributed under applicable open-source license terms, including GNU GPL requirements. Users retain all rights granted by the relevant licenses, including rights concerning access to, modification of, and redistribution of covered source code.
+
+The project's AutoHotkey script source and the `AUTOHOTKEY_LICENSE.txt` file are provided in the repository. Additional corresponding source and build information will be provided as necessary to satisfy the applicable license requirements.
+
+### Microsoft Keyboard Layout Creator
+
+The custom keyboard layout was created using **Microsoft Keyboard Layout Creator (MSKLC) 1.4**.
+
+Microsoft Keyboard Layout Creator itself is **not included** in this distribution. The keyboard installation files are generated outputs of the tool.
+
+Official information: https://www.microsoft.com/en-us/download/details.aspx?id=102134
+
+### Inno Setup
+
+The Windows installation package is created using **Inno Setup 7**.
+
+Inno Setup is developed by Jordan Russell and Martijn Laan and is subject to its own license terms.
+
+Official website: https://jrsoftware.org/isinfo.php
+
+### Third-party licensing
+
+Third-party components remain subject to their respective licenses. Nothing in the project's licensing statements is intended to restrict rights granted under those licenses.
 
 ## Development status
 
-- Windows version: 2.2
-- macOS version: Planned
-- Source code and installer updates: GitHub Releases
+- **Windows:** Version 2.2 — completed and tested on Windows 11 x64.
+- **Windows 10 x64:** Additional compatibility testing planned.
+- **macOS:** Planned for future development.
+- **Downloads and updates:** GitHub Releases.
+
+---
+
+**SAKHO UZB Keyboard — O‘zbek lotin yozuvida qulay va tezkor matn kiritish uchun.**
