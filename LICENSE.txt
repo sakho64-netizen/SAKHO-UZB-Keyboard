@@ -1,0 +1,96 @@
+SAKHO UZB Keyboard 2.2
+FOYDALANISH SHARTLARI / ЛИЦЕНЗИОННОЕ СОГЛАШЕНИЕ
+
+Muallif / Автор: Saxobiddin Abdurayimovich Xudayberdiyev
+Versiya / Версия: 2.2
+© 2026 Saxobiddin Abdurayimovich Xudayberdiyev
+
+============================================================
+O‘ZBEKCHA
+============================================================
+
+1. Umumiy qoidalar
+
+SAKHO UZB Keyboard — Windows 10 va Windows 11 (64-bit) tizimlarida o‘zbek lotin yozuvida matn kiritish uchun mo‘ljallangan bepul dasturiy mahsulot.
+
+2. Foydalanish huquqlari
+
+Foydalanuvchiga dasturni bepul yuklab olish, o‘rnatish va shaxsiy, ta’lim, ilmiy hamda tijorat faoliyatida ishlatishga ruxsat beriladi.
+
+Dastur bir nechta kompyuterga o‘rnatilishi mumkin.
+
+3. Mualliflik huquqlari
+
+Loyihaning muallifga tegishli mustaqil qismlari mualliflik huquqi bilan himoyalangan.
+
+Ushbu qismlarni muallif ruxsatisiz o‘zgartirilgan holda SAKHO UZB Keyboard nomi ostida tarqatish yoki mualliflikni noto‘g‘ri ko‘rsatish taqiqlanadi.
+
+Ushbu cheklovlar uchinchi tomon litsenziyalari beradigan huquqlarga tatbiq etilmaydi.
+
+4. Uchinchi tomon komponentlari
+
+Dastur AutoHotkey, Inno Setup va Microsoft Keyboard Layout Creator texnologiyalaridan foydalanib yaratilgan.
+
+AutoHotkey komponentlariga GNU GPL v2 litsenziyasi va tegishli boshqa litsenziya shartlari qo‘llanadi.
+
+Ushbu kelishuv uchinchi tomon litsenziyalari asosida berilgan huquqlarni cheklamaydi.
+
+5. Kafolat va javobgarlik
+
+Dastur mavjud holatida ("AS IS") taqdim etiladi.
+
+Amaldagi qonunchilik ruxsat bergan darajada muallif dasturning barcha kompyuterlarda uzluksiz va xatosiz ishlashiga kafolat bermaydi.
+
+6. Tarqatish
+
+Dasturning rasmiy manzili:
+https://github.com/sakho64-netizen/SAKHO-UZB-Keyboard
+
+Foydalanuvchilar rasmiy yuklab olish havolasini erkin ulashishlari mumkin. Dastur nusxalarini qayta tarqatishda tegishli litsenziya shartlariga rioya qilinishi kerak.
+
+============================================================
+РУССКИЙ
+============================================================
+
+1. Общие положения
+
+SAKHO UZB Keyboard — бесплатное программное обеспечение для ввода текста на узбекской латинице в Windows 10 и Windows 11 (64-разрядные версии).
+
+2. Права пользователя
+
+Пользователь имеет право бесплатно скачивать, устанавливать и использовать программу в личных, образовательных, научных и коммерческих целях.
+
+Допускается установка программы на нескольких компьютерах.
+
+3. Авторские права
+
+Самостоятельные компоненты проекта, принадлежащие автору, охраняются авторским правом.
+
+Запрещается распространять изменённые версии этих компонентов под оригинальным названием SAKHO UZB Keyboard без разрешения автора или указывать недостоверные сведения об авторстве.
+
+Эти ограничения не распространяются на права, предоставленные лицензиями сторонних компонентов.
+
+4. Сторонние компоненты
+
+Программа создана с использованием технологий AutoHotkey, Inno Setup и Microsoft Keyboard Layout Creator.
+
+К компонентам AutoHotkey применяются условия GNU GPL v2 и соответствующих дополнительных лицензий.
+
+Настоящее соглашение не ограничивает права пользователей, предоставленные лицензиями стороннего программного обеспечения.
+
+5. Гарантии и ответственность
+
+Программа предоставляется «КАК ЕСТЬ» ("AS IS").
+
+В пределах, допускаемых применимым законодательством, автор не гарантирует бесперебойную и безошибочную работу программы на всех компьютерных конфигурациях.
+
+6. Распространение
+
+Официальный источник программы:
+https://github.com/sakho64-netizen/SAKHO-UZB-Keyboard
+
+Пользователи могут свободно делиться ссылкой на официальную страницу загрузки. Повторное распространение копий программы должно соответствовать применимым лицензионным условиям.
+
+============================================================
+© 2026 Saxobiddin Abdurayimovich Xudayberdiyev
+Third-party components remain subject to their respective licenses.
