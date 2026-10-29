@@ -14,46 +14,22 @@ jobs:
       - name: Verify source files
         shell: pwsh
         run: |
-          Get-ChildItem -Name
-          foreach ($file in @("UZB.C", "UZB.H", "UZB.DEF", "UZB.RC")) {
-            if (-not (Test-Path $file)) {
-              throw "Missing source file: $file"
-            }
+          foreach ($file in @("UZB.C", "UZB.H", "UZB.DEF", "UZB.RC", "kbd.h")) {
+            if (-not (Test-Path $file)) { throw "Missing source file: $file" }
           }
 
-      - name: Check MSVC build tools
-        shell: cmd
-        run: |
-          set "VS_PATH="
-          for /f "usebackq delims=" %%i in (`powershell -NoProfile -Command "& 'C:\Program Files (x86)\Microsoft Visual Studio\Installer\vswhere.exe' -latest -products '*' -requires Microsoft.VisualStudio.Component.VC.Tools.x86.x64 -property installationPath"`) do set "VS_PATH=%%i"
-          if not defined VS_PATH (
-            echo ERROR: Visual Studio C++ Build Tools not found.
-            exit /b 1
-          )
-          call "%VS_PATH%\VC\Auxiliary\Build\vcvars64.bat" || exit /b 1
-          where cl || exit /b 1
-          where link || exit /b 1
-          where rc || exit /b 1
-          cl 2>&1
-          exit /b 0
-      
+      - name: Set up MSVC (x64)
+        uses: ilammy/msvc-dev-cmd@v1
+        with:
+          arch: x64
+
       - name: Build UZB keyboard DLL x64
         shell: cmd
         run: |
-          set "VS_PATH="
-          for /f "usebackq delims=" %i in (`"%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vswhere.exe" -latest -products * -requires Microsoft.VisualStudio.Component.VC.Tools.x86.x64 -property installationPath`) do set "VS_PATH=%i"
-          if not defined VS_PATH exit /b 1
-
-          call "%VS_PATH%\VC\Auxiliary\Build\vcvars64.bat" || exit /b 1
-
           rc /nologo /fo UZB.res UZB.RC || exit /b 1
-
-          cl /nologo /c /W3 /O2 /DWIN32 /D_WINDOWS /D_AMD64_ UZB.C /Fo:UZB.obj || exit /b 1
-
+          cl /nologo /c /W3 /O2 /GS- /I. /DWIN32 /D_WINDOWS /D_AMD64_ UZB.C /Fo:UZB.obj || exit /b 1
           link /nologo /DLL /MACHINE:X64 /OUT:UZB.dll /DEF:UZB.DEF UZB.obj UZB.res /NODEFAULTLIB /ENTRY:DllMain || exit /b 1
-
-          if not exist UZB.dll exit /b 1
-          dir UZB.dll
+          dumpbin /exports UZB.dll || exit /b 1
 
       - name: Upload UZB DLL
         uses: actions/upload-artifact@v4
