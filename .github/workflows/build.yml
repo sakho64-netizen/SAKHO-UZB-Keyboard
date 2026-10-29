@@ -14,9 +14,14 @@ jobs:
       - name: Verify source files
         shell: pwsh
         run: |
+          Get-ChildItem -Name
           foreach ($file in @("UZB.C", "UZB.H", "UZB.DEF", "UZB.RC", "kbd.h")) {
             if (-not (Test-Path $file)) { throw "Missing source file: $file" }
           }
+
+      - name: Show DLL entry point in source
+        shell: cmd
+        run: findstr /i /n "DllMain DllEntry KbdLayerDescriptor" UZB.C
 
       - name: Set up MSVC (x64)
         uses: ilammy/msvc-dev-cmd@v1
@@ -26,9 +31,13 @@ jobs:
       - name: Build UZB keyboard DLL x64
         shell: cmd
         run: |
+          echo === rc ===
           rc /nologo /fo UZB.res UZB.RC || exit /b 1
+          echo === cl ===
           cl /nologo /c /W3 /O2 /GS- /I. /DWIN32 /D_WINDOWS /D_AMD64_ UZB.C /Fo:UZB.obj || exit /b 1
+          echo === link ===
           link /nologo /DLL /MACHINE:X64 /OUT:UZB.dll /DEF:UZB.DEF UZB.obj UZB.res /NODEFAULTLIB /ENTRY:DllMain || exit /b 1
+          echo === exports ===
           dumpbin /exports UZB.dll || exit /b 1
 
       - name: Upload UZB DLL
