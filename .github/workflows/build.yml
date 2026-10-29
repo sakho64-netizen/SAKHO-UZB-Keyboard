@@ -41,7 +41,7 @@ jobs:
         shell: cmd
         run: |
           set "VS_PATH="
-          for /f "usebackq delims=" %%i in (`"%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vswhere.exe" -latest -products * -requires Microsoft.VisualStudio.Component.VC.Tools.x86.x64 -property installationPath`) do set "VS_PATH=%%i"
+          for /f "usebackq delims=" %i in (`"%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vswhere.exe" -latest -products * -requires Microsoft.VisualStudio.Component.VC.Tools.x86.x64 -property installationPath`) do set "VS_PATH=%i"
           if not defined VS_PATH exit /b 1
 
           call "%VS_PATH%\VC\Auxiliary\Build\vcvars64.bat" || exit /b 1
