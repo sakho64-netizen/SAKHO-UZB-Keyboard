@@ -1,0 +1,21 @@
+
+name: SAKHO UZB Keyboard Build
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4
+
+      - name: Verify build environment
+        shell: pwsh
+        run: |
+          Write-Host "SAKHO UZB Keyboard 2.2"
+          Write-Host "GitHub Actions is working."
+          Write-Host "Source files:"
+          Get-ChildItem -Name
