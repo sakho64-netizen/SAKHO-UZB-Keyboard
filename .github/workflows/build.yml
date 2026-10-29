@@ -12,10 +12,19 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v4
 
-      - name: Verify build environment
+      - name: Verify source files
         shell: pwsh
         run: |
-          Write-Host "SAKHO UZB Keyboard 2.2"
-          Write-Host "GitHub Actions is working."
-          Write-Host "Source files:"
           Get-ChildItem -Name
+          foreach ($file in @("UZB.C", "UZB.H", "UZB.DEF", "UZB.RC")) {
+            if (-not (Test-Path $file)) {
+              throw "Missing source file: $file"
+            }
+          }
+
+      - name: Check MSVC build tools
+        shell: cmd
+        run: |
+          where cl
+          where link
+          where rc
