@@ -30,7 +30,7 @@ jobs:
         run: |
           rc /nologo /fo UZB.res UZB.RC || exit /b 1
           cl /nologo /c /W3 /O2 /GS- /I. /DWIN32 /D_WINDOWS /D_AMD64_ UZB.C /Fo:UZB.obj || exit /b 1
-          link /nologo /DLL /MACHINE:X64 /OUT:UZB.dll /DEF:UZB.DEF UZB.obj UZB.res /NODEFAULTLIB /ENTRY:DllMain || exit /b 1
+          link /nologo /DLL /MACHINE:X64 /NOENTRY /OUT:UZB.dll /DEF:UZB.DEF UZB.obj UZB.res /NODEFAULTLIB || exit /b 1
           dumpbin /exports UZB.dll || exit /b 1
 
       - name: Upload UZB DLL
