@@ -1,4 +1,3 @@
-
 name: SAKHO UZB Keyboard Build
 
 on:
@@ -16,22 +15,53 @@ jobs:
         shell: pwsh
         run: |
           Get-ChildItem -Name
+
           foreach ($file in @("UZB.C", "UZB.H", "UZB.DEF", "UZB.RC")) {
             if (-not (Test-Path $file)) {
               throw "Missing source file: $file"
             }
           }
 
-            - name: Check MSVC build tools
-              shell: cmd
-              run: |
-                for /f "usebackq delims=" %i in (`"%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vswhere.exe" -latest -products * -requires Microsoft.VisualStudio.Component.VC.Tools.x86.x64 -property installationPath`) do set "VS_PATH=%%i"
-                if not defined VS_PATH (
-                  echo ERROR: Visual Studio C++ Build Tools not found.
-                  exit /b 1
-                )
-                call "%VS_PATH%\VC\Auxiliary\Build\vcvars64.bat"
-                where cl
-                where link
-                where rc
-                cl /Bv
+          Write-Host "All keyboard source files found."
+
+      - name: Check MSVC build tools
+        shell: cmd
+        run: |
+          @echo off
+          setlocal
+
+          set "VSWHERE=%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vswhere.exe"
+
+          if not exist "%VSWHERE%" (
+            echo ERROR: vswhere.exe not found.
+            exit /b 1
+          )
+
+          for /f "usebackq delims=" %%i in (`"%VSWHERE%" -latest -products * -requires Microsoft.VisualStudio.Component.VC.Tools.x86.x64 -property installationPath`) do set "VS_PATH=%%i"
+
+          if not defined VS_PATH (
+            echo ERROR: Visual Studio C++ Build Tools not found.
+            exit /b 1
+          )
+
+          echo Visual Studio found at:
+          echo %VS_PATH%
+
+          call "%VS_PATH%\VC\Auxiliary\Build\vcvars64.bat"
+
+          if errorlevel 1 exit /b 1
+
+          where cl.exe
+          if errorlevel 1 exit /b 1
+
+          where link.exe
+          if errorlevel 1 exit /b 1
+
+          where rc.exe
+          if errorlevel 1 exit /b 1
+
+          cl /Bv
+          if errorlevel 1 exit /b 1
+
+          echo MSVC build environment is ready.
+
