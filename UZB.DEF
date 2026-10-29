@@ -1,0 +1,4 @@
+LIBRARY UZB
+ 
+ EXPORTS 
+    KbdLayerDescriptor @1
